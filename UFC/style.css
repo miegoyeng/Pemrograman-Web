@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 500vh;  /* Menambahkan tinggi minimal untuk body */
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #e62424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: black; /* Ubah warna menjadi hitam saat di-hover */
+}
+
+.language {
+    font-size: 18px;
+}
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #000;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero .btn {
+    background-color: #e62424;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Trending Section */
+.trending {
+    background-color: #e62424;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.trending h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+main {
+    flex: 1;  /* Memungkinkan main untuk mengambil sisa ruang */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button{
+    background-color: #e62424;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.fighter-form input, .fighter-form button, .fighter-form select {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.fighter-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fighter-list li {
+    border: 1px solid #444;
+    margin: 0.5em 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fighter-list button {
+    margin-left: 1em;
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+}
+
+.fighter-list button:hover {
+    background-color: #A40000;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+footer img {
+    width: 30px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Membuat teks tebal */
+}
+
+.footer-links a:hover {
+    color: #e62424; /* Tambahkan efek hover jika diperlukan */
+    transition: color 0.3s ease;
+}

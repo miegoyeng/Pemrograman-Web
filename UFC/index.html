@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Fighter Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">UMFC</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Leaderboards</a></li>
+                <li><a href="#">Our Socials</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <div class="language">EN</div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome, Kids</h2>
+            <h1>Solve your Problem into the Best Way</h1>
+            <p>Find the best entertainment by watching the exciting matches</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Order Ticket</a>
+            </div>
+        </section>
+        <section class="trending">
+            <h3>What's Trending Now?</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="app/images/pict1.png" alt="Prepare to Fight">
+                    <h4>Prepare to Fight</h4>
+                    <p>Alex Asap has been prepared to his first match</p>
+                </div>
+                <div class="card">
+                    <img src="app/images/pict2.png" alt="Boxing History">
+                    <h4>Boxing History</h4>
+                    <p>The earliest visual evidence of type of boxing came from</p>
+                </div>
+                <div class="card">
+                    <img src="app/images/pict1.png" alt="Say Goodbye to the Enemy">
+                    <h4>Say Goodbye to the Enemy</h4>
+                    <p>One bullet per enemy, that should be enough, yes?</p>
+                </div>
+            </div>
+        </section>
+        <section class="fighter-form">
+            <h2>Add Fighter</h2>
+            <input type="text" id="name" placeholder="Fighter Name" required>
+            <select id="weight_class">
+                <option value="Featherweight">Featherweight</option>
+                <option value="Lightweight">Lightweight</option>
+                <option value="Welterweight">Welterweight</option>
+                <option value="Middleweight">Middleweight</option>
+                <option value="Heavyweight">Heavyweight</option>
+            </select>
+            <input type="text" id="record" placeholder="Record (e.g., 20-5-0)" required>
+            <input type="text" id="country" placeholder="Country" required>
+            <button onclick="addFighter()">Add Fighter</button>
+        </section>
+        
+        <section class="fighter-list">
+            <h2>Fighter List</h2>
+            <ul id="fighter-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022-2024 Ambatukam Company All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Notice</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
